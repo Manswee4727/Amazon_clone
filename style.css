@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    border: border-box;
+}
+.navbar{
+    height: 65px;
+    color: white;
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav_logo{
+    height: 60px;
+    width: 100px;
+}
+.logo{
+    background-image: url("./amazon_logo_final.png");
+    background-size: contain;
+
+    height: 60px;
+    width: 100px;
+}
+.border{
+    border: 2px transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+.add-first{
+    color: #cccccc;
+    font-family: sans-serif;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+.add-second{
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin-left: 1px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+.navbar_search{
+    display: flex;
+    width: 620px;
+    height: 40px;
+    border-radius: 8px;
+    justify-content: space-evenly;
+}
+.search_select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: none;
+}
+.search_input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search_icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #febd6a;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color:#131921;
+}
+.navbar_search:hover{
+    border: 2px solid rgb(239, 186, 71);
+}
+.lang_container {
+    display: flex;
+    align-items: center;    /* Vertically aligns flag, text, and arrow perfectly */
+    justify-content: center;
+    gap: 6px;               /* Clean horizontal spacing between the divs */
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+/* 1. Flag Container with background image */
+.flag_image {
+    width: 22px;
+    height: 15px;
+    background-image: url("./USA.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2px;     /* Subtle rounded corner look */
+}
+
+/* 2. Text Container */
+.lang_text {
+    color: #ffffff;
+    font-weight: 700;       /* Makes "EN" bold */
+    font-size: 14px;
+    line-height: 1;         /* Prevents extra height from pushing alignment off */
+}
+
+/* 3. Arrow Container (Built using pure CSS borders, no text character needed) */
+.arrow_icon {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #a7a7a7; /* Creates a downward-pointing triangle */
+    margin-top: 4px;                /* Fine-tuning the center alignment */
+}
+.nav_signin{
+    font-size: 0.86rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+}
+span{
+    font-size: 0.7rem;
+    margin-right: 45px;
+}
+.nav_second{
+    font-size: 0.90rem;
+    font-weight: 700;
+}
+.arrow_icon2 {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #a7a7a7; /* Creates a downward-pointing triangle */
+    margin-top: -10px;                /* Fine-tuning the center alignment */
+    margin-left: 130px;
+
+}
+.nav_return{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+}
+.span2{
+    font-size: 0.7rem;
+    margin-right: 27px;
+
+}
+.nav_cart i{
+    font-size: 32px;
+}
+.nav_cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/** panel **/
+.panel{
+    height: 40px;
+    background-color: #242f3e;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel_ops p{
+    display: inline;
+    margin-left: 15px;
+}
+.panel_ops{
+    width: 70%;
+    font-size: 0.85rem;
+    
+}
+.panel_deals{
+    font-size: 0.95rem;
+    color: rgb(227, 227, 234);
+    font-weight: 700;
+}
+/** hero section **/
+.hero_msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 96%;
+    margin-bottom: 55px;
+}
+.hero_section{
+    background-image: url("./amazon_images/Main.jpg");
+    background-size: cover;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero_msg a{
+    color: #8ebbf6;
+    text-decoration: underline;
+}
+/** shop section**/
+.shop_section{
+    margin-top: -30px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(226, 221, 225);
+    flex-wrap: wrap;
+}
+.box{
+    height: 350px;
+    /** border: 2px solid black; **/
+    width: 22%;
+    background-color: white;
+    margin-top: 2rem;
+}
+.box_img{
+    height: 400px;
+    padding: 20px 0px 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box_content{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.box_content p{
+    text-decoration: underline;
+    margin-top: 13rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #8ebbf6;
+}
+h2{
+    font-size: 1.3rem;
+}
+/** slider **/ 
+.slide1{
+    height: 360px;
+    background-color: rgb(226, 221, 225);
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.box_container {
+    background-color: white;
+    padding: 6px;
+    margin-left: 25px;
+    width: 95%;
+    height: 310px;
+    font-family:  sans-serif;
+    display:flex;
+    flex-direction: column;
+}
+
+/* Heading style */
+.toys {
+    font-size: 21px;
+    font-weight: 700;
+    color: #0f1111;
+    margin-bottom: -3rem;
+    margin-top: 0px;
+}
+
+/* Horizontal flex row for the images */
+.toy_images {
+    display: flex;
+    gap: 7px;             /* Clean, equal spacing between each toy box */
+    justify-content: space-evenly;
+}
+
+/* Base style for all 5 image blocks */
+.img {
+    width: 17%;          /* Width of individual image box */
+    height: 350px;         /* Height of individual image box */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.section{
+    display: flex;
+    background-color: rgb(226, 221, 225);
+    justify-content: space-evenly;
+}
+.boxx{
+    background-color: white;
+}
+.box_contentt{
+    width: 285px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.box_contentt h2{
+    padding: 10px;
+    margin-left: 4px;
+    margin-top: 7px;
+}
+.four_boxes{
+    height: 250px;
+    width: 245px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.four_box1{
+    height: 40%;
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px;
+}
+.four_box2{
+    height: 40%;
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px;
+}
+.four_box3{
+    height: 40%;
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px;
+    
+}
+.four_box4{
+    height: 40%;
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px;
+}
+/** new rec **/
+.new{
+    background-color: white;
+    height: 190px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.in{
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px solid rgb(209, 204, 204);
+    height: 70%;
+    width: 100%;
+    gap: 5px;
+    padding: 20px;
+}
+.in_text_1{
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 10px;     /* Small gap at the top of the box */
+    padding-bottom: 2px;   /* Drastically minimizes the distance to the sign-in bar */
+}
+.in_text_2 a{
+    color: #8ebbf6;
+}
+.in_signin{
+    display: flex;
+    justify-content: center;
+}
+.c1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#febd6a;
+}
+.r{
+    width: 100px;
+    height: 50px;
+    background-color:#febd6a;
+    margin-left: -25px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.r p{
+    font-weight: 700;
+    z-index: 1;
+}
+.c2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#febd6a;
+    margin-left: -25px;
+
+}
+.in_text_2 a:hover {
+    color: #c45500;            /* Orange link hover state style */
+    text-decoration: underline;
+}
+
+/** footer **/
+footer{
+    margin-top: 20px;
+}
+.foot_panel1{
+    background-color: #36475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+.foot_panel2{
+    background-color: #242f3e;
+    color: white;
+    height: 375px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 50px;
+}
+ul a{
+    display: block;
+    margin-top: 10px;
+    font-size: 0.89rem;
+}
+.foot_panel3{
+    background-color: #242f3e;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    background-image: url("./logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+.foot_panel4{
+    background-color: #131a22;
+    padding-left: 140px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 40px;
+
+}
+.multiple_tags{
+    background-color: #131a22;
+    color: white;
+    height: 465px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.grid_item{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.multiple_tags p{
+    font-size: 0.85rem;
+}
+.multiple_tags a{
+    font-size: 0.70rem;
+    color:#a7a7a7;
+}
+.grid_item:hover a{
+    text-decoration: underline; /* Standard link hover effect */
+}
+
+.pages{
+    background-color: #131a22;
+    height: 30px;
+    color: white;
+    font-size: 0.78rem;
+}
+.copyright{
+    background-color: #131a22;
+    height: 30px;
+    color: white;
+     font-size: 0.78rem;
+}
+.foot_panel5{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #131a22;
+    height: 60px;
+}
